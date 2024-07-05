@@ -42,139 +42,10 @@ background: #FFFFFF;
   }
 }
 
-.card {
-  padding: 2em;
-}
+
 
 .read-the-docs {
   color: #888;
-}
-
-.header-container {/* Header */
-
-  /* Auto layout */
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  
-}
-
-.header {/* Header desktop */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 24px 240px;
-  gap: 10px;
-/*   
-  width: 1440px;
-  height: 87.14px; */
-  
-  background: #FFFFFF;
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  }
-
-.divider {
-  /* Divider */
-  margin :0;
-  /* width: 1440px; */
-  height: 0px;
-
-  border: 1px solid #CED2DA;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-
-}
-
-.frame {
-    /* Frame 2682 */
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 32px;
-  /* background-color: #888888; */
-  /* width: 66%; */
-  height: 39.14px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-
-}
-
-.logo {
-  /* logo */
-
-width: 102px;
-height: 39.14px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
-.header2 {
-  /* Header */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 32px;
-
-width: 86%;
-height: 24px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 1;
-
-}
-
-.gap {
-  /* Item menu */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 32px;
-
-width: 35%;
-height: 24px;
-
-
-/* Inside auto layout */
-flex: none;
-/* order: 2; */
-flex-grow: 1;
-
 }
 
 .content {
@@ -184,10 +55,10 @@ flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 240px 72px;
+  padding: 0px 420px 72px;
   gap: 24px;
-
-
+  margin-top: 48px;
+  
   background: #FFFFFF;
 
   /* Inside auto layout */
@@ -202,18 +73,9 @@ flex-grow: 1;
 
   /* Auto layout */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+
   gap: 48px;
-background-color: #61dafbaa;
+  background-color: #ffffffaa;
   width: 100%;
-  height: 532.86px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-
+  flex-wrap: wrap;
 }

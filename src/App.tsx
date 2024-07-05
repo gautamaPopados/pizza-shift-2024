@@ -1,47 +1,15 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import axios, {AxiosError} from 'axios'
+import { HeaderComponent } from './components/Header/Header';
+import { ApiResponse } from './constants/interfaces';
+import { Card } from './components/pizzaCard/Card';
 
 
 function App() {
   const [data1, setData] = useState<ApiResponse>()
 
-  interface SizeDough {
-    name : string;
-    price : number;
-  }
-
-  interface Extra {
-    name : string;
-    cost : number;
-    img : string;
-  }
-
-  interface Pizza {
-    id: number;
-    name: string;
-    ingridients : Extra[];
-    toppings : Extra[];
-    description : string;
-    sizes : SizeDough[];
-    doughs : SizeDough[];
-    calories : number;
-    protein : string;
-    totalFat : string;
-    carbohydrates : string;
-    sodium : string;
-    allergens : string[];
-    isVegeterian : boolean;
-    isGlutenFree : boolean;
-    isNew : boolean;
-    isHit : boolean;
-    img : string;
-  }
-
-  interface ApiResponse {
-    success : boolean;
-    catalog : Pizza[];
-  }
+  
 
   const getCatalog = async (): Promise<ApiResponse> => {
     const { data } = await axios.get<ApiResponse>('https://shift-backend.onrender.com/pizza/catalog')
@@ -49,7 +17,7 @@ function App() {
   }
 
   useEffect(() => {
-     const blyat = async () => {
+     const f = async () => {
       try {
         const response = await getCatalog();
         if (response.success) {
@@ -60,37 +28,20 @@ function App() {
         console.log('Error');
       }
      }
-     blyat();
+     f();
     
     }, []);
 
   return (
     <>
-      <header className='header-container'>
-        <div className="header">
-          <div className="frame">
-            <a className='logo'><img src='src\assets\logo.svg'></img></a>
-            <div className='header2'>
-              <a className='profile'><img src ='src\assets\profile.svg'></img></a>
-              <a className='orders'><img src ='src\assets\orders.svg'></img></a>
-              <a className="gap"></a>
-              <a className='cart'><img src ='src\assets\basket.svg'></img></a>
-              <a className='logoff'><img src ='src\assets\logoff.svg'></img></a>
-            </div>
-          </div>
-        </div>
-        
-        <hr className='divider'></hr>
-      </header>
-
+      <HeaderComponent/>
       <div className="content">
         <div className="cards">
           {
+
             data1 ? 
             data1.catalog.map((pizza) =>
-              <div className="card">
-                <p> {pizza.name}</p>
-              </div>
+              <Card pizza={pizza} openModalComponent={()=> {}} />
             ) : <p>no</p>
           }
         </div>
