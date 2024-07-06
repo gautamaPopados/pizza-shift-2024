@@ -1,68 +1,53 @@
 import { useEffect, useState } from 'react';
 import { getCatalog } from './utils/api/requests/pizza/catalog';
-import { HeaderComponent } from './components/Header/Header';
-import { Card } from './components/pizzaCard/Card';
+import { Header } from './components/Header/Header';
+import { PizzaCard } from './components/PizzaCard/PizzaCard';
 import PizzaModal from './components/PizzaModal/PizzaModal';
-import './App.css'
+import styles from './App.module.css'
 
-function App() {
-
-  const [pizzaData, setData] = useState<ApiResponse>()
+const App = () => {
+  const [pizzaData, setPizzaData] = useState<Pizza[]>([])
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalData, setModalData] = useState<Pizza>();
+  const [selectedPizza, setSelectedPizza] = useState<Pizza>();
 
-  const openModal = (pizza : Pizza) => {
-    setModalData(pizza);
+  const openModal = (pizza: Pizza) => {
+    setSelectedPizza(pizza);
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeModal = () => 
     setIsModalOpen(false);
-  };
-
+  
 
   useEffect(() => {
-     const f = async () => {
+     const asyncFunction = async () => {
       try {
-        const response = (await getCatalog()).data;
-        if (response) {
-          setData(response);
+        const {success, catalog} = (await getCatalog()).data;
+
+        if (success) {
+          setPizzaData(catalog);
         }
       }
       catch {
         console.log('Error');
       }
      }
-     f();
-    
+     asyncFunction();
     }, []);
 
   return (
     <>
-      <HeaderComponent/>
-      <div className="content">
-        <div className="cards">
-          {
-            pizzaData ? 
-            pizzaData.catalog.map((pizza) =>
-              <Card pizza={pizza} openModal={openModal} />
-            ) : <p>no</p>
-          }
+      <Header/>
+        <div className={styles.content}>
+          <div className={styles.cards}>
+            {!!pizzaData.length && 
+              pizzaData.map((pizza) => <PizzaCard key={pizza.id} pizza={pizza} onChoose={openModal} buttonChildren='Выбрать'/>)
+            }
+            {!pizzaData.length && <p>Loading...</p>}
+          </div>
         </div>
-      </div>
-      <PizzaModal isOpen={isModalOpen} onClose={closeModal} pizza={modalData}/>  
-      {/* <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
+        <PizzaModal isOpen={isModalOpen} onClose={closeModal} pizza={selectedPizza}/>  
+      
     </>
   )
 }

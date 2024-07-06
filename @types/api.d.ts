@@ -35,13 +35,4 @@
     catalog : Pizza[];
   }
 
-   interface CardProps {
-    pizza : Pizza;
-    openModal: (pizza: Pizza) => void;
-  }
-
-  interface ModalProps {
-    isOpen: boolean;
-    onClose: () => void;
-    pizza?: Pizza;
-  }
+ 

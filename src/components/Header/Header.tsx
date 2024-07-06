@@ -1,25 +1,36 @@
-/// <reference types="vite-plugin-svgr/client" />
-import {LogoIcon, ProfileIcon, OrdersIcon, LogOffIcon, BasketIcon} from '../../assets'
-import './Header.css'
+import * as icons from '../../assets'
+import styles from './Header.module.css'
 
-export const HeaderComponent = () => {
+export const Header = () => {
     return (
     <>
-        <header className='header-container'>
-            <div className="header">
-            <div className="frame">
-                <LogoIcon/>
-                <div className='header2'>
-                <ProfileIcon/>
-                <OrdersIcon/>
-                <div  className="gap"></div>
-                <BasketIcon/>
-                <LogOffIcon/>
+        <header className={styles.container}>
+            <div className={styles.header}>
+                <div className={styles.frame}>
+                    <icons.LogoIcon/>
+                    <div className={styles.inner}>
+                        <div className={styles.item}>
+                            <icons.UserIcon/>
+                            <span className={styles.itemText}>Профиль</span>
+                        </div>
+                        <div className={styles.item}>
+                            <icons.TimeIcon/>
+                            <span className={styles.itemText}>Заказы</span>
+                        </div>
+                        <div  className={styles.gap}></div>
+                        <div className={styles.item}>
+                            <icons.BasketIcon/>
+                            <span className={styles.itemText}>Корзина</span>
+                        </div>
+                        <div className={styles.item}>
+                            <icons.ExitIcon/>
+                            <span className={styles.itemText}>Выйти</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
             
-            <hr className='divider'></hr>
+            <hr className={styles.divider}></hr>
         </header>
     </>
     )

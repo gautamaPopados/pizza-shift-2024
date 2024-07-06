@@ -1,4 +1,4 @@
-.modal-wrapper {
+.wrapper {
     position: fixed;
     left: 0;
     top: 0;
@@ -11,13 +11,13 @@
     background-color: #0000006c;
     visibility: hidden;
     transition: all 0.3s;
-  }
+}
   
-  .active {
-    opacity: 1;
-    visibility: visible;
-  }
-.modal-container {
+.active {
+opacity: 1;
+visibility: visible;
+}
+.container {
     /* Card */
 
 /* Auto layout */
@@ -40,7 +40,7 @@ flex-grow: 0;
 z-index: 3;
 }
 
-.modal-header {
+.header {
     /* Pop-up */
 
 /* Auto layout */
@@ -63,7 +63,7 @@ flex-grow: 0;
 
 }
 
-.modal-line {
+.line {
     /* Line */
 
 /* Auto layout */
@@ -84,21 +84,25 @@ flex-grow: 0;
 
 }
 
-.modal-cross {
+.cross {
     /* Символы / Cross */
-
 width: 24px;
 height: 24px;
-
+fill: #CED2DA !important;
 
 /* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
 
+transition: fill 0.1s ease-in-out;
 }
 
-.modal-body {
+.cross:hover {
+    fill: #b0b2ba !important;
+}
+
+.body {
     /* Login */
 
 /* Auto layout */
@@ -121,7 +125,7 @@ flex-grow: 0;
 
 }
 
-.modal-frame {
+.frame {
     /* Frame 2819 */
 
 /* Auto layout */
@@ -145,7 +149,7 @@ z-index: 0;
 
 }
 
-.modal-img {
+.img {
     /* Сырная_220x220 */
 
 margin: 0 auto;
@@ -160,7 +164,7 @@ flex-grow: 0;
 
 }
 
-.modal-scrollbar {
+.scrollbar {
     /* Scroll Bar */
 
 position: absolute;
@@ -178,7 +182,7 @@ z-index: 1;
 
 }
 
-.modal-inner-frame {
+.inner-frame {
     /* Frame 2818 */
 
 /* Auto layout */
@@ -200,7 +204,7 @@ flex-grow: 0;
 
 }
 
-.modal-upper-inner-frame {
+.upper-inner-frame {
     /* Frame */
 
 /* Auto layout */
@@ -222,7 +226,7 @@ flex-grow: 0;
 
 }
 
-.modal-bottom-inner-frame {
+.bottom-inner-frame {
     /* Frame 2820 */
 
 /* Auto layout */
@@ -243,35 +247,9 @@ flex-grow: 0;
 
 }
 
-.add-to-basket-button {
-    /* Button */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-gap: 8px;
 
-width: 426px;
-height: 56px;
-
-background: #F4511E;
-border-radius: 16px;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
-
-}
-.add-to-basket-button:hover {
-    background-color: #e95021;
-}
-
-.modal-text {
+.text {
     /* Text */
 
 /* Auto layout */
@@ -293,7 +271,7 @@ flex-grow: 0;
 
 }
 
-.modal-title {
+.title {
 /* Двойной цыпленок */
 
 width: 394px;
@@ -319,7 +297,7 @@ flex-grow: 0;
 
 }
 
-.modal-size-and-dough {
+.size-and-dough {
     /* 30 см, традиционное тесто */
 
 width: 394px;
@@ -345,7 +323,7 @@ flex-grow: 0;
 
 }
 
-.modal-description {
+.description {
     /* Цыпленок , моцарелла, фирменный соус альфредо */
 
 width: 394px;
