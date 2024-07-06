@@ -1,26 +1,31 @@
 import { useEffect, useState } from 'react';
-import './App.css'
-import axios, {AxiosError} from 'axios'
+import { getCatalog } from './utils/api/requests/pizza/catalog';
 import { HeaderComponent } from './components/Header/Header';
-import { ApiResponse } from './constants/interfaces';
 import { Card } from './components/pizzaCard/Card';
-
+import PizzaModal from './components/PizzaModal/PizzaModal';
+import './App.css'
 
 function App() {
-  const [data1, setData] = useState<ApiResponse>()
 
-  
+  const [pizzaData, setData] = useState<ApiResponse>()
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState<Pizza>();
 
-  const getCatalog = async (): Promise<ApiResponse> => {
-    const { data } = await axios.get<ApiResponse>('https://shift-backend.onrender.com/pizza/catalog')
-    return data
-  }
+  const openModal = (pizza : Pizza) => {
+    setModalData(pizza);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
 
   useEffect(() => {
      const f = async () => {
       try {
-        const response = await getCatalog();
-        if (response.success) {
+        const response = (await getCatalog()).data;
+        if (response) {
           setData(response);
         }
       }
@@ -38,15 +43,14 @@ function App() {
       <div className="content">
         <div className="cards">
           {
-
-            data1 ? 
-            data1.catalog.map((pizza) =>
-              <Card pizza={pizza} openModalComponent={()=> {}} />
+            pizzaData ? 
+            pizzaData.catalog.map((pizza) =>
+              <Card pizza={pizza} openModal={openModal} />
             ) : <p>no</p>
           }
         </div>
       </div>
-      
+      <PizzaModal isOpen={isModalOpen} onClose={closeModal} pizza={modalData}/>  
       {/* <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

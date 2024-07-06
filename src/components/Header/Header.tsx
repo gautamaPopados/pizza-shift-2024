@@ -1,3 +1,5 @@
+/// <reference types="vite-plugin-svgr/client" />
+import {LogoIcon, ProfileIcon, OrdersIcon, LogOffIcon, BasketIcon} from '../../assets'
 import './Header.css'
 
 export const HeaderComponent = () => {
@@ -6,13 +8,13 @@ export const HeaderComponent = () => {
         <header className='header-container'>
             <div className="header">
             <div className="frame">
-                <a className='logo'><img src='src\assets\logo.svg'></img></a>
+                <LogoIcon/>
                 <div className='header2'>
-                <a   className='profile'><img src ='src\assets\profile.svg'></img></a>
-                <a   className='orders'><img src ='src\assets\orders.svg'></img></a>
+                <ProfileIcon/>
+                <OrdersIcon/>
                 <div  className="gap"></div>
-                <a   className='cart'><img src ='src\assets\basket.svg'></img></a>
-                <a   className='logoff'><img src ='src\assets\logoff.svg'></img></a>
+                <BasketIcon/>
+                <LogOffIcon/>
                 </div>
             </div>
             </div>

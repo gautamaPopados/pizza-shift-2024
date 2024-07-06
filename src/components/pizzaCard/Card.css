@@ -180,6 +180,10 @@ flex-grow: 0;
 
 }
 
+.pizza-button:hover {
+    background: #e95021;
+}
+
 .pizza-name {
     /* Пепперони */
 /* Пепперони */
