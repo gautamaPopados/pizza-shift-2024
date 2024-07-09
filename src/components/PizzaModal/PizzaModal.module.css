@@ -12,238 +12,239 @@
     visibility: hidden;
     transition: all 0.3s;
 }
-  
+
 .active {
-opacity: 1;
-visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
+
 .container {
     /* Card */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
 
-position: absolute;
-width: 806px;
-height: 644px;
-left: calc(50% - 806px/2);
-top: calc(50% - 644px/2);
+    position: absolute;
+    width: 806px;
+    height: 644px;
+    left: calc(50% - 806px/2);
+    top: calc(50% - 644px/2);
 
 
-/* Inside auto layout */
-flex: none;
-order: 3;
-flex-grow: 0;
-z-index: 3;
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    z-index: 3;
 }
 
 .header {
     /* Pop-up */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-padding: 16px 24px 0px;
-gap: 10px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px 24px 0px;
+    gap: 10px;
 
-width: 806px;
-height: 40px;
+    width: 806px;
+    height: 40px;
 
-background: #FFFFFF;
-border-radius: 16px 16px 0px 0px;
+    background: #FFFFFF;
+    border-radius: 16px 16px 0px 0px;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 
 }
 
 .line {
     /* Line */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
 
-width: 24px;
-height: 24px;
+    width: 24px;
+    height: 24px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 
 }
 
 .cross {
     /* Символы / Cross */
-width: 24px;
-height: 24px;
-fill: #CED2DA !important;
+    width: 24px;
+    height: 24px;
+    fill: #CED2DA;
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 
-transition: fill 0.1s ease-in-out;
+    transition: fill 0.1s ease-in-out;
 }
 
 .cross:hover {
-    fill: #b0b2ba !important;
+    fill: #b0b2ba;
 }
 
 .body {
     /* Login */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 24px 64px;
-isolation: isolate;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 64px;
+    isolation: isolate;
 
-width: 806px;
-height: 604px;
+    width: 806px;
+    height: 604px;
 
-background: #FFFFFF;
-border-radius: 0px 0px 16px 16px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 16px 16px;
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 
 }
 
 .frame {
     /* Frame 2819 */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
 
-width: 678px;
-height: 556px;
+    width: 678px;
+    height: 556px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-z-index: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
 
 }
 
 .img {
     /* Сырная_220x220 */
 
-margin: 0 auto;
-width: 220px;
-height: 220px;
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 
 }
 
 .scrollbar {
     /* Scroll Bar */
 
-position: absolute;
-width: 9px;
-height: 476px;
-left: 733px;
-top: 24px;
+    position: absolute;
+    width: 9px;
+    height: 476px;
+    left: 733px;
+    top: 24px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-z-index: 1;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
 
 }
 
 .inner-frame {
     /* Frame 2818 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
 
-margin: 0 auto;
-width: 426px;
-height: 556px;
+    margin: 0 auto;
+    width: 426px;
+    height: 556px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 
 }
 
 .upper-inner-frame {
     /* Frame */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px 16px;
-gap: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 24px;
 
-width: 426px;
-height: 184px;
+    width: 426px;
+    height: 184px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 
 }
 
 .bottom-inner-frame {
     /* Frame 2820 */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
 
-width: 426px;
-height: 268px;
+    width: 426px;
+    height: 268px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 
 }
 
@@ -252,99 +253,129 @@ flex-grow: 0;
 .text {
     /* Text */
 
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 8px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
 
-width: 394px;
-height: 116px;
+    width: 394px;
+    height: 116px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 
 }
 
 .title {
-/* Двойной цыпленок */
+    /* Двойной цыпленок */
 
-width: 394px;
-height: 32px;
+    width: 394px;
+    height: 32px;
 
-/* Title/H2 */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 32px;
-/* identical to box height, or 133% */
+    /* Title/H2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
 
-/* Text/Title */
-color: #292929;
+    /* Text/Title */
+    color: #292929;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 
 }
 
 .size-and-dough {
     /* 30 см, традиционное тесто */
 
-width: 394px;
-height: 20px;
+    width: 394px;
+    height: 20px;
 
-/* Paragraph 14/Regular */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-/* identical to box height, or 143% */
+    /* Paragraph 14/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
 
-/* Text/Body Primary */
-color: #535353;
+    /* Text/Body Primary */
+    color: #535353;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 
 }
 
-.description {
+.ingridients {
     /* Цыпленок , моцарелла, фирменный соус альфредо */
 
-width: 394px;
-height: 48px;
+    width: 394px;
+    height: 48px;
 
-/* Paragraph 16/Regular */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+    /* Paragraph 16/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
 
-/* Text/Body Primary */
-color: #535353;
+    /* Text/Body Primary */
+    color: #535353;
 
 
-/* Inside auto layout */
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.toggle-button-group {
+    /* Tabs
+
+<h2><strong>Правила использования</strong></h2><ol><li>Отступы и стили текста внутри компонента менять нельзя</li><li>Параметры компонента можно менять только в настройках компонента (панель справа)</li></ol><p><br></p><h2><strong>Из чего состоит</strong></h2><p><strong>Текстовые стили:</strong></p><ul><li>Body2Regular</li></ul><p><br></p><h2><strong>Когда использовать</strong></h2><p>Для табов, чаще всего используется сверху на. экране</p>
+
+<h2><strong>Правила использования</strong></h2><ol><li>Отступы и стили текста внутри компонента менять нельзя</li><li>Параметры компонента можно менять только в настройках компонента (панель справа)</li></ol><p><br></p><h2><strong>Из чего состоит</strong></h2><p><strong>Текстовые стили:</strong></p><ul><li>Body2Regular</li></ul><p><br></p><h2><strong>Когда использовать</strong></h2><p>Для табов, чаще всего используется сверху на. экране</p>
+*/
+
+    /* Auto layout */
+    display: flex;
+    padding: 0px;
+
+    width: 394px;
+    height: 44px;
+
+
+    /* Inside auto layout */
+
+}
+
+.toggle-button {
+    /* left tab */
+
+    /* Auto layout */
+
+    width: 130px;
+    height: 40px;
 
 }

@@ -1,4 +1,5 @@
+import { AxiosRequestConfig, RawAxiosRequestConfig } from "axios";
 import { api } from "../../../instance"
 
-export const getCatalog = async (requestConfig?: GetCatalogConfig) => 
-    api.get<ApiResponse>('/pizza/catalog', requestConfig?.config)
+export const getCatalog = async (requestConfig?: AxiosRequestConfig) =>
+    api.get<PizzasResponse>('/pizza/catalog', requestConfig)

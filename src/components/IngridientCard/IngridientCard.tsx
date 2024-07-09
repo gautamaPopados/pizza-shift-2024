@@ -1,14 +1,9 @@
-import { BASE_URL } from "../../utils/constants/api"
 import Button from "../Input/button/Button";
-import styles from './PizzaCard.module.css'
+import { BASE_URL } from "../../utils/constants/api"
+import styles from './IngridientCard.module.css'
+import { CardProps } from '../PizzaCard/PizzaCard'
 
-export interface CardProps {
-    pizza: Pizza;
-    onChoose: (pizza: Pizza) => void;
-    buttonChildren: string;
-}
-
-const PizzaCard = ({ pizza, onChoose, buttonChildren }: CardProps) => {
+export const IngridientCard = ({ pizza, onChoose, buttonChildren }: CardProps) => {
     return (
         <div className={styles.container}>
             <img className={styles.img} src={`${BASE_URL}${pizza.img}`} alt={"Картинка пиццы " + pizza.name} />
@@ -19,11 +14,9 @@ const PizzaCard = ({ pizza, onChoose, buttonChildren }: CardProps) => {
                 </div>
                 <div className={styles.frame}>
                     <h3 className={styles.price}>{'От ' + pizza.sizes[0].price}</h3>
-                    <Button className={styles.button} onClick={() => onChoose(pizza)} children={buttonChildren}/>
+                    <Button onClick={() => onChoose(pizza)} children={buttonChildren} width='298.67px' height='56px' />
                 </div>
             </div>
         </div>
     )
 }
-
-export default PizzaCard;

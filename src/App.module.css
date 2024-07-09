@@ -1,16 +1,16 @@
 #root {
   /* Главная */
 
-/* Auto layout */
-display: block;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 48px;
+  /* Auto layout */
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
 
-position: relative;
+  position: relative;
 
-background: #FFFFFF;
+  background: #FFFFFF;
 
 }
 
@@ -28,7 +28,7 @@ background: #FFFFFF;
   padding: 0px 420px 72px;
   gap: 24px;
   margin-top: 48px;
-  
+
   background: #FFFFFF;
 
   /* Inside auto layout */
@@ -38,7 +38,7 @@ background: #FFFFFF;
 
 }
 
-.cards {
+.pizza-cards {
   /* Cards */
 
   /* Auto layout */

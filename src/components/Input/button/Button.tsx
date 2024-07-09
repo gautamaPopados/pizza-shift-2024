@@ -1,34 +1,22 @@
 import styles from './Button.module.css'
 
-interface Props {
-    border?: string;
-    color?: string;
+interface ButtonProps {
     children?: React.ReactNode;
-    height?: string;
     onClick?: () => void;
-    radius?: string
-    width?: string;
-  }
-  
-const Button = ({ 
-        color,
-        children,
-        height,
-        onClick, 
-        radius,
-        width
-    }: Props) => { 
+    className?: string;
+}
+
+const Button = ({
+    children,
+    onClick,
+    className
+}: ButtonProps) => {
     return (
-        <button className={styles.button}
-        onClick={onClick}
-        style={{
-            backgroundColor: color,
-            borderRadius: radius,
-            height,
-            width
-        }}
+        <button
+            className={`${styles.button} ${className}`}
+            onClick={onClick}
         >
-        {children}
+            {children}
         </button>
     );
 }

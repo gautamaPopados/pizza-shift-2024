@@ -1,25 +1,25 @@
 button {
     /* Button */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 16px 32px;
-gap: 8px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 8px;
 
-width: 426px;
-height: 56px;
-transition: background 0.2s ease-in-out;
-background: #F4511E;
-border-radius: 16px;
+    width: 426px;
+    height: 56px;
+    transition: background 0.2s ease-in-out;
+    background: #F4511E;
+    border-radius: 16px;
 
-/* Inside auto layout */
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 button:hover {

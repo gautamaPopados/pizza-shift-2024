@@ -1,5 +1,5 @@
-
-.container {/* Header */
+.container {
+  /* Header */
 
   /* Auto layout */
   display: block;
@@ -10,10 +10,11 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  
+
 }
 
-.header {/* Header desktop */
+.header {
+  /* Header desktop */
 
   /* Auto layout */
   display: flex;
@@ -22,18 +23,18 @@
   padding: 24px 420px;
   gap: 10px;
   height: 87.14px;
-  
+
   background: #FFFFFF;
-  
+
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
-  
-  }
+
+}
 
 .frame {
-    /* Frame 2682 */
+  /* Frame 2682 */
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -56,14 +57,14 @@
 .logo-container {
   /* logo */
 
-width: 102px;
-height: 39.14px;
+  width: 102px;
+  height: 39.14px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
 }
 
@@ -72,50 +73,50 @@ flex-grow: 0;
 .logo-text {
   /* Group 33 */
 
-position: absolute;
-width: 41px;
-height: 33.32px;
-left: 0.12px;
-top: 4.82px;
+  position: absolute;
+  width: 41px;
+  height: 33.32px;
+  left: 0.12px;
+  top: 4.82px;
 }
 
 .logo-upper-text {
   /* ШИФТ */
 
-position: absolute;
-left: 0.12%;
-right: 59.69%;
-top: 12.32%;
-bottom: 44.25%;
+  position: absolute;
+  left: 0.12%;
+  right: 59.69%;
+  top: 12.32%;
+  bottom: 44.25%;
 
-font-family: 'Fira Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 13.963px;
-line-height: 17px;
-/* identical to box height */
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.963px;
+  line-height: 17px;
+  /* identical to box height */
 
-color: #F4511E;
+  color: #F4511E;
 }
 
 .logo-bottom-text {
   /* PIZZA */
 
-position: absolute;
-left: 0.12%;
-right: 64.59%;
-top: 54.01%;
-bottom: 2.55%;
+  position: absolute;
+  left: 0.12%;
+  right: 64.59%;
+  top: 54.01%;
+  bottom: 2.55%;
 
-font-family: 'Fira Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 13.963px;
-line-height: 17px;
-/* identical to box height */
-text-transform: uppercase;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.963px;
+  line-height: 17px;
+  /* identical to box height */
+  text-transform: uppercase;
 
-color: #F4511E;
+  color: #F4511E;
 
 
 }
@@ -123,94 +124,94 @@ color: #F4511E;
 .inner {
   /* Header */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 32px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
 
-width: 86%;
-height: 24px;
+  width: 86%;
+  height: 24px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 1;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
 
 }
-  
+
 .gap {
   /* Item menu */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 32px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
 
-width: 35%;
-height: 24px;
+  width: 35%;
+  height: 24px;
 
 
-/* Inside auto layout */
-flex: none;
-/* order: 2; */
-flex-grow: 1;
+  /* Inside auto layout */
+  flex: none;
+  /* order: 2; */
+  flex-grow: 1;
 
 }
 
 .item {
   /* Item menu */
 
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 
-width: 111px;
-height: 24px;
+  width: 111px;
+  height: 24px;
 
 
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
 }
 
 .item-text {
   /* Item menu */
 
-width: 71px;
-height: 24px;
+  width: 71px;
+  height: 24px;
 
-/* Paragraph 16/Medium */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+  /* Paragraph 16/Medium */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-color: #344051;
+  color: #344051;
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 
 }
 
- 
+
 .divider {
   /* Divider */
-  margin :0;
+  margin: 0;
   /* width: 1440px; */
   height: 0px;
 
