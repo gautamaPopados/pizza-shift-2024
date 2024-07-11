@@ -1,8 +1,9 @@
+import { Pizza } from "../../@types/pizzaTypes";
 import { BASE_URL } from "../../utils/constants/api"
 import Button from "../Input/button/Button";
 import styles from './PizzaCard.module.css'
 
-export interface CardProps {
+interface CardProps {
     pizza: Pizza;
     onChoose: (pizza: Pizza) => void;
     buttonChildren: string;
@@ -18,7 +19,7 @@ const PizzaCard = ({ pizza, onChoose, buttonChildren }: CardProps) => {
                     <span className={styles.description}>{pizza.description}</span>
                 </div>
                 <div className={styles.frame}>
-                    <h3 className={styles.price}>{'От ' + pizza.sizes[0].price}</h3>
+                    <h3 className={styles.price}>{'От ' + pizza.sizes[0].price + ' ₽'}</h3>
                     <Button className={styles.button} onClick={() => onChoose(pizza)} children={buttonChildren}/>
                 </div>
             </div>

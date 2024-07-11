@@ -1,3 +1,4 @@
+
 .wrapper {
     position: fixed;
     left: 0;
@@ -12,6 +13,7 @@
     visibility: hidden;
     transition: all 0.3s;
 }
+
 
 .active {
     opacity: 1;
@@ -205,6 +207,53 @@
 
 }
 
+.second-inner-frame {
+    overflow-y: scroll;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    margin: 0 auto;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+div::-webkit-scrollbar {
+    width: 10px;
+}
+  
+div::-webkit-scrollbar-thumb {
+    /* Scroll Bar */
+  
+  left: 0%;
+  right: 2.44%;
+  top: 0%;
+  bottom: 80.25%;
+  
+  background: #CED2DA;
+  border-radius: 100px;
+  transition: background 0.2s ease-in-out;
+  
+  }
+  div::-webkit-scrollbar-thumb:hover {
+    /* Scroll Bar */
+  
+  left: 0%;
+  right: 2.44%;
+  top: 0%;
+  bottom: 80.25%;
+  transition: background 0.2s ease-in-out;
+  background: #bec2c9;
+  border-radius: 100px;
+  
+  }
+  
 .upper-inner-frame {
     /* Frame */
 
@@ -350,32 +399,137 @@
 
 }
 
-.toggle-button-group {
-    /* Tabs
-
-<h2><strong>Правила использования</strong></h2><ol><li>Отступы и стили текста внутри компонента менять нельзя</li><li>Параметры компонента можно менять только в настройках компонента (панель справа)</li></ol><p><br></p><h2><strong>Из чего состоит</strong></h2><p><strong>Текстовые стили:</strong></p><ul><li>Body2Regular</li></ul><p><br></p><h2><strong>Когда использовать</strong></h2><p>Для табов, чаще всего используется сверху на. экране</p>
-
-<h2><strong>Правила использования</strong></h2><ol><li>Отступы и стили текста внутри компонента менять нельзя</li><li>Параметры компонента можно менять только в настройках компонента (панель справа)</li></ol><p><br></p><h2><strong>Из чего состоит</strong></h2><p><strong>Текстовые стили:</strong></p><ul><li>Body2Regular</li></ul><p><br></p><h2><strong>Когда использовать</strong></h2><p>Для табов, чаще всего используется сверху на. экране</p>
-*/
+.tabs {
+    /* common space */
 
     /* Auto layout */
     display: flex;
-    padding: 0px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
 
     width: 394px;
     height: 44px;
 
+    background: #F3F4F7;
+    border-radius: 16px;
 
     /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 
 }
 
-.toggle-button {
-    /* left tab */
+.list {
+    display: inline-block;
+}
+
+.tab {
+    /* right tab */
 
     /* Auto layout */
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 24px;
 
     width: 130px;
     height: 40px;
+    user-select: none;
+    border-radius: 14px;
 
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    color: #637083;
+    transition: background 0.2s ease-out;
+    text-align: center;
+}
+
+.active-tabs {
+    /* left tab */
+
+    /* Auto layout */
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 24px;
+
+    width: 130px;
+    height: 40px;
+    color: #141C24;
+    text-align: center;
+    user-select: none;
+    background: #FFFFFF;
+    border-radius: 14px;
+    transition: background 0.2s ease-out;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+.bottom-text-frame {
+    /* Frame 35 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 16px;
+    gap: 10px;
+
+    width: 426px;
+    height: 24px;
+    color: #141C24;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Добавить по вкусу */
+
+    width: 410px;
+    height: 24px;
+
+    /* Paragraph 16/Medium */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* Text/Title */
+    color: #292929;
+}
+
+.toppings {
+    /* Frame 35 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 0px 0px;
+    gap: 11px;
+    width: 426px;
+    height: 236px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }

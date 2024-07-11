@@ -50,3 +50,8 @@ export enum Ingridients {
     [Ingridients.CHICKEN_FILLET]: 'Филе курицы',
     [Ingridients.MEATBALLS]: 'Мясные шарики'
   };
+  export const translationSizes: { [key: string]: string } = {
+    [Sizes.SMALL]: '25см',
+    [Sizes.MEDIUM]: '30см',
+    [Sizes.LARGE]: '35см'
+  };

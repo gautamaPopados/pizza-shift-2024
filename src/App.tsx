@@ -5,6 +5,7 @@ import PizzaModal from './components/PizzaModal/PizzaModal';
 import styles from './App.module.css'
 import useFetch from './utils/hooks/useFetch';
 import { getCatalog } from './utils/api/requests';
+import { Pizza } from './@types/pizzaTypes';
 
 const App = () => {
   const { data: pizzaData, isPending, error } = useFetch(getCatalog);
