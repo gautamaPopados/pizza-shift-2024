@@ -14,5 +14,12 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "quotes": ["warn", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "indent": ["warn", 2],
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "parent", "sibling", "index"],
+      "newlines-between": "always-and-inside-groups",
+    }]
   },
 }

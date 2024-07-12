@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* не всегда актуально, но и не навредит */
+    box-sizing: border-box;
+}
+
+.container {
+    /* CardPizza */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 235px;
+    height: 484px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+
+}
+
+.img {
+    /* Пепперони_220x220 */
+
+    width: 220px;
+    height: 220px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.content {
+    /* Text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 8px;
+
+    width: 298.67px;
+    height: 104px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.text {
+    /* Text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 298.67px;
+    height: 104px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.frame {
+    /* Frame 2815 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 298.67px;
+    height: 104px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.price {
+    /* от 299 ₽ */
+
+    width: 298.67px;
+    height: 24px;
+
+    /* Title/H3 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    /* Text/Title */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    /* от 299 ₽ */
+
+    width: 298.67px;
+    height: 24px;
+
+    /* Title/H3 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    /* Text/Title */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.name {
+    /* Пепперони */
+    /* Пепперони */
+
+    width: 298.67px;
+    height: 24px;
+
+    /* Title/H3 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    /* Text/Title */
+    color: #292929;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+
+}
+
+.description {
+    /* Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус */
+
+    width: 298.67px;
+    height: 72px;
+
+    /* Paragraph 16/Regular */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* Text/Body Primary */
+    color: #535353;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.pizza-content {
+    /* Content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 298.67px;
+    height: 240px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 298.67px;
+    height: 240px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.button {
+    width: 298.67px;
+    height: 56px;
+}
